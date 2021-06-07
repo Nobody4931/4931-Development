@@ -5,7 +5,7 @@
 	"type": "module",
 	"main": "src/main.js",
 	"scripts": {
-		"build": "",
+		"build": "cd build/ && css.bat",
 		"start": "node ."
 	},
 	"repository": {
