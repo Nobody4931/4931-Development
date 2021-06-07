@@ -1,23 +1,25 @@
 {
-  "name": "4931-development",
-  "version": "2.0.0",
-  "description": "welcome to my website",
-  "main": "src/main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Nobody4931/4931-Development.git"
-  },
-  "author": "Nobody4931",
-  "license": "UNLICENSED",
-  "bugs": {
-    "url": "https://github.com/Nobody4931/4931-Development/issues"
-  },
-  "homepage": "https://github.com/Nobody4931/4931-Development#readme",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1"
-  }
+	"name": "4931-development",
+	"version": "2.0.0",
+	"description": "welcome to my website",
+	"type": "module",
+	"main": "src/main.js",
+	"scripts": {
+		"build": "",
+		"start": "node ."
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Nobody4931/4931-Development.git"
+	},
+	"author": "Nobody4931",
+	"license": "UNLICENSED",
+	"bugs": {
+		"url": "https://github.com/Nobody4931/4931-Development/issues"
+	},
+	"homepage": "https://github.com/Nobody4931/4931-Development#readme",
+	"dependencies": {
+		"body-parser": "^1.19.0",
+		"express": "^4.17.1"
+	}
 }
