@@ -10,7 +10,7 @@ App.use(BodyParser.urlencoded({ extended: false }));
 App.use(BodyParser.json());
 
 /* BACKEND */
-App.get("/discord", (_Request, Response) => Response.redirect("https://discord.gg/N2VFsA6"));
+App.get("/discord", (_Request, Response) => Response.redirect(`https://discord.gg/${Config.DISCORD}`));
 
 /* FRONTEND */
 App.use("/", Express.static(`${process.cwd()}/src/frontend`, { index: "index.html" }));
