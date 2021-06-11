@@ -53,7 +53,7 @@ end
 _G.project_build = function(enter_insert)
 	local term = get_terminal()
 	vim.fn.chansend(term[3], "cd " .. curr_directory .. "; ")
-	vim.fn.chansend(term[3], "npm build\r")
+	vim.fn.chansend(term[3], "npm run build\r")
 
 	if (enter_insert ~= 0) then
 		vim.api.nvim_set_current_win(term[1])
@@ -64,7 +64,7 @@ end
 _G.project_run = function(enter_insert)
 	local term = get_terminal()
 	vim.fn.chansend(term[3], "cd " .. curr_directory .. "; ")
-	vim.fn.chansend(term[3], "npm start\r")
+	vim.fn.chansend(term[3], "npm run start\r")
 
 	if (enter_insert ~= 0) then
 		vim.api.nvim_set_current_win(term[1])
