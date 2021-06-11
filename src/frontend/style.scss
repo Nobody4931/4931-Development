@@ -1,0 +1,167 @@
+:root {
+	--bg-main: #27203d;
+	--fg-main: #bcbbc9;
+	--fg-light: #dcddde;
+	--fg-link: #86c2eb;
+	--fg-blue: #0ad3f7;
+	--fg-purple: #ff00bb;
+}
+
+@mixin font-nunito {
+	font-family: Nunito, sans-serif;
+	font-weight: 400;
+}
+
+@mixin font-rubik {
+	font-family: Rubik, sans-serif;
+	font-weight: 300;
+}
+
+body {
+	background: var(--bg-main);
+	color: var(--fg-main);
+
+	border: 0;
+	padding: 0;
+	margin: 0;
+	line-height: 100%;
+
+	@include font-rubik;
+	font-size: 1.25rem;
+	user-select: none;
+}
+
+a {
+	color: var(--fg-link);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.content {
+	height: 100%;
+	overflow: hidden;
+}
+
+.full-height {
+	height: 100vh;
+}
+
+.flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.title {
+	@include font-nunito;
+	font-size: 300%;
+	text-align: center;
+}
+
+.subtitle {
+	@include font-rubik;
+	color: var(--fg-light);
+	font-size: 175%;
+	text-align: center;
+}
+
+.subsubtitle {
+	@include font-rubik;
+	color: var(--fg-light);
+	font-size: 150%;
+	text-align: center;
+}
+
+.pulsate {
+	animation: pulsate;
+	animation-duration: 1.75s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+#meme {
+	@include font-rubik;
+	font-size: 30%;
+}
+
+.arrow {
+	position: absolute;
+	top: 85%;
+	left: 50%;
+
+	transform-origin: 50% 50%;
+	transform: translate(-50%, -50%);
+
+	opacity: 0;
+
+	animation: arrow-movement;
+	animation-delay: calc(var(--arrow) * 1s);
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+
+	&:before, &:after {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		width: 35px;
+		height: 3px;
+
+		content: "";
+		background: #ffffff;
+	}
+
+	&:before {
+		transform-origin: center;
+		transform: translateX(-32%) rotate(45deg);
+	}
+
+	&:after {
+		transform-origin: center;
+		transform: translateX(32%) rotate(-45deg);
+	}
+}
+
+@keyframes pulsate {
+	0% {
+		transform: scale(1);
+		opacity: 0.6;
+	}
+
+	25% {
+		transform: scale(1.1) rotate(3deg);
+		opacity: 1.0;
+	}
+
+	50% {
+		transform: scale(1);
+		opacity: 0.6;
+	}
+
+	75% {
+		transform: scale(1.1) rotate(-3deg);
+		opacity: 1.0;
+	}
+
+	100% {
+		transform: scale(1);
+		opacity: 0.6;
+	}
+}
+
+@keyframes arrow-movement {
+	0% {
+		opacity: 0;
+		top: 77.5%;
+	}
+
+	80% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}

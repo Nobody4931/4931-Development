@@ -10,6 +10,7 @@ App.use(BodyParser.urlencoded({ extended: false }));
 App.use(BodyParser.json());
 
 /* BACKEND */
+App.get("/discord", (_Request, Response) => Response.redirect("https://discord.gg/N2VFsA6"));
 
 /* FRONTEND */
 App.use("/", Express.static(`${process.cwd()}/src/frontend`, { index: "index.html" }));
@@ -18,4 +19,4 @@ App.get("*", (_Request, Response) => Response.redirect("/"));
 
 /* STARTUP */
 App.listen(Config.PORT, () =>
-	console.log(`Server started successfully on port ${Config.PORT}!`));
+	console.log(`Server started successfully on port ${Config.PORT}`));
