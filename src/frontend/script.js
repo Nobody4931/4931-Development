@@ -14,7 +14,7 @@ const Quotes = [
 	"coming soon to a computer near you",
 	"\"hash ip addresses\", they said",
 	"a big thank you to discord for paywalling literally everything",
-	"hi college board please stop digging up blackmail about me",
+	"hi college board please stop digging up blackmail on me",
 	"inb4 74912302172412th website rewrite",
 	"there's probably a stack overflow somewhere in the site code",
 	"wait for someone on discord to say theyre going to ddos me",
