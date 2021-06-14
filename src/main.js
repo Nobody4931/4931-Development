@@ -11,7 +11,7 @@ App.use(BodyParser.json());
 
 /* BACKEND */
 App.get(/.*\.scss/, (_Request, Response) => Response.redirect("/"));
-App.get(/.*(?<!\.obf)\.js/, (_Request, Response) => Response.redirect("/"));
+App.get(/.*(?<!\.obf|\.min)\.js/, (_Request, Response) => Response.redirect("/"));
 
 App.get("/discord", (_Request, Response) => Response.redirect(`https://discord.gg/${Config.DISCORD}`));
 
