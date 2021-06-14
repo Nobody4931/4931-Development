@@ -1,6 +1,6 @@
 @echo off
 
-for /R ..\src %%f in (*.scss) do (
+for /R ..\src\frontend %%f in (*.scss) do (
 	call sass^
 		--no-source-map^
 		"%%f":"%%~dpf%%~nf.css"
