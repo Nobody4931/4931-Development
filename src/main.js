@@ -10,14 +10,8 @@ App.use(BodyParser.urlencoded({ extended: false }));
 App.use(BodyParser.json());
 
 /* BACKEND */
-
-// TODO:
-// - build/js.bat
-// 		* Obfuscates *.js -> *.obf.js
-// - App.get(/.*(?<!\.obf)\.js/)
-// 		* Redirects to /
-// - App.get(/.*\.scss/)
-// 		* Redirects to /
+App.get(/.*\.scss/, (_Request, Response) => Response.redirect("/"));
+App.get(/.*(?<!\.obf)\.js/, (_Request, Response) => Response.redirect("/"));
 
 App.get("/discord", (_Request, Response) => Response.redirect(`https://discord.gg/${Config.DISCORD}`));
 
