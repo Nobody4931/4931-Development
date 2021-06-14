@@ -17,6 +17,7 @@ App.get("/discord", (_Request, Response) => Response.redirect(`https://discord.g
 
 /* FRONTEND */
 App.use("/", Express.static(`${process.cwd()}/src/frontend`, { index: "index.html" }));
+App.use("/vendor", Express.static(`${process.cwd()}/src/vendor`));
 App.get("*", (_Request, Response) => Response.redirect("/"));
 
 /* STARTUP */
