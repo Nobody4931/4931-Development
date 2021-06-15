@@ -1,10 +1,17 @@
+$bg-main: #27203d;
+$fg-main: #bcbbc9;
+$fg-link: #86c2eb;
+$fg-blue: #0ad3f7;
+$fg-purple: #ff00bb;
+
 :root {
-	--bg-main: #27203d;
-	--fg-main: #bcbbc9;
-	--fg-light: #dcddde;
-	--fg-link: #86c2eb;
-	--fg-blue: #0ad3f7;
-	--fg-purple: #ff00bb;
+	--bg-main: #{ $bg-main };
+	--bg-light: #{ lighten( $bg-main, 4% ) };
+	--fg-main: #{ $fg-main };
+	--fg-light: #{ lighten( $fg-main, 16% ) };
+	--fg-link: #{ $fg-link };
+	--fg-blue: #{ $fg-blue };
+	--fg-purple: #{ $fg-purple };
 }
 
 @mixin font-nunito {
