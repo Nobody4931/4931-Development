@@ -13,7 +13,7 @@ const Quotes = [
 	"imagine being that one guy that decided to eat a bat",
 	"coming soon to a computer near you",
 	"\"hash ip addresses\", they said",
-	"a big thank you to discord for paywalling literally everything",
+	"a big thank you to discord for not fixing a memory leak since 2019",
 	"hi college board please stop digging up blackmail on me",
 	"inb4 74912302172412th website rewrite",
 	"there's probably a stack overflow somewhere in the site code",
@@ -21,8 +21,9 @@ const Quotes = [
 	"sponsored by nord vpn because you just got ip logged :flushed:",
 	"mom look i hosted a website are you proud of me",
 	"python - crashing programs by adding a single extra space",
-	"japt better than javascript :pensive:"
-	// pretty sure...
+	"japt better than javascript :pensive:",
+	"pretty sure this website would crash if you stay on it long enough",
+	"proudly made in the united states of america"
 	// shoutout to...
 ];
 
