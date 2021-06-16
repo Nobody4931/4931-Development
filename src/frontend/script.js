@@ -23,7 +23,13 @@ const Quotes = [
 	"python - crashing programs by adding a single extra space",
 	"japt better than javascript :pensive:",
 	"pretty sure this website would crash if you stay on it long enough",
-	"proudly made in the united states of america"
+	"proudly made in the united states of america",
+	"i hate this codebase so goddamn much",
+	"@everyone automator v4 outline done. release in... eta 5 years",
+	"who looked at discord and said \"yeah this is good enough for release\"",
+	"you like among us? congratulations, youre braindead!",
+	"2020年文件黑客 rm -rf /",
+	"<!doctype we do not care>"
 	// shoutout to...
 ];
 
